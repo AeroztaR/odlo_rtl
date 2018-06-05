@@ -1,0 +1,28 @@
+.content {
+    background-color: #242424;
+}
+// pic with description
+.content-mainpic__img {
+    width: 100%;
+    background-size: cover;
+}
+
+.content-description {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    background-color: #000;
+    text-align: center;
+    .content-description__title {
+        color: #1299ce;
+        text-transform: uppercase;
+        font-size: em(28);
+        letter-spacing: -0.01em;
+        padding: 2% 19%;
+    }
+    .content-description__text {
+        color: #fff;
+        font-size: em(24);
+        padding: 0 16% 3% 16%;
+    }
+}

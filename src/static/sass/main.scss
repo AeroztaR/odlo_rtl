@@ -5,6 +5,7 @@
 html, body {
     height: 100%;
     font-family: 'Lato', sans-serif;
+    background-color: #002041;
 }
   
 h1, h2, h3, h4, h5, h6 {margin: 0;}
@@ -32,7 +33,11 @@ input, select, button {outline: none;}
       box-sizing: border-box;
     }
 }
-  	
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
 
 //Модули
 @import "modules/modules.scss";
