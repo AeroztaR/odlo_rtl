@@ -1,0 +1,42 @@
+@import 'vars.scss';
+@import 'libs.scss';
+@import 'mixins.scss';
+
+html, body {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+  
+h1, h2, h3, h4, h5, h6 {margin: 0;}
+  
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+p {margin: 0;}
+  
+a {text-decoration: none;}
+  
+audio, canvas, iframe, img, svg, video {vertical-align: middle;}
+  
+textarea {resize: none;}
+  
+input, select, button {outline: none;}
+  
+* {
+    // outline: 1px solid red;
+    box-sizing: border-box;
+    &:before, &:after {
+      box-sizing: border-box;
+    }
+}
+  	
+
+//Модули
+@import "modules/modules.scss";
+
+// СТРАНИЦЫ
+// Главная страница
+@import 'pages/index/index.scss';

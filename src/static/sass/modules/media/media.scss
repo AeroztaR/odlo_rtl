@@ -1,0 +1,12 @@
+$phone: "(min-width: 360px) and (max-width: 640px)";
+$tablet: "(min-width: 640px) and (max-width: 1024px)";
+
+// $tablet
+@media #{$tablet} {
+
+}
+
+// $phone
+@media #{$phone} {
+
+}
