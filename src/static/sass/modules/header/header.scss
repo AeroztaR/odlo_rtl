@@ -3,7 +3,7 @@
     flex-flow: row wrap;
     justify-content: flex-start;
     background-color: #242424;
-    padding-bottom: 20px;
+    padding: 0 4.4% 2% 4.9%;
     border-bottom: 7px solid #fff;
 }
 
@@ -11,7 +11,7 @@
     background: url("../img/main-logo.jpg") no-repeat;
     width: 61px;
     height: 61px;
-    margin: 30px 0 0 50px;
+    margin-top: 30px;
 }
 
 .header-nav {
@@ -25,7 +25,6 @@
     li {
         width: 25%;
     }
-    
 }
 
 .header-menu__item {
@@ -52,16 +51,16 @@
     }
     &:nth-child(3) {
         flex: 0 1 auto;
-        padding: 1% 5% 1% 0;
+        padding: 1% 0 1% 0;
         text-align: right;
         align-self: center;
         .header-menu__link:nth-child(1) {
-            padding-right: 2%;
+            padding-right: 1%;
         }
         .header-menu__link:nth-child(1)::after{
             content: '|';
             color: #fff;
-            padding-left: 4%;
+            padding-left: 3%;
         }
         .header-menu__link:nth-child(2) {
             padding-left: 2%;
