@@ -1,6 +1,4 @@
-.content {
-    background-color: #242424;
-}
+.content {background-color: #242424;}
 
 // pic with description
 .content-mainpic__img {
@@ -29,9 +27,7 @@
 }
 
 // video slider
-.content-slider-topic, .content-slider__img {
-    padding: 0 4.4% 0 4.9%;
-}
+.content-slider-topic, .content-slider__img, .ritual-stat {padding: 0 4.4% 0 4.9%;}
 
 .content-slider-topic__title {
     text-transform: uppercase;
@@ -47,10 +43,6 @@
     padding-bottom: 5px;
 }
 
-.content-slider {
-    padding-bottom: 200px;
-}
-
 .content-slider__img {
     // display: none;
     width: 100%;
@@ -60,6 +52,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    padding-bottom: 2.5%;
 }
 
 .content-slider-inner::before {
@@ -105,4 +98,119 @@
     &:hover, &:active {
         border-bottom: 2px solid #010101;
     }
+}
+
+// ritual-description
+.ritual-description {padding: 0 4.4% 0 4.9%;}
+
+.ritual-description__title {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    @extend .content-slider-topic__title;
+    padding-bottom: 1.5%;
+    font-size: em(19);
+}
+
+.ritual-instagram__link {
+    display: inline-flex;
+    font-size: em(13);
+    color: #fff;
+    text-transform: none;
+    span {
+        white-space: nowrap; 
+        padding-top: 3%;
+        align-self: center;
+    } 
+    img {padding-left: 3%;}
+}
+
+.ritual-description__text {
+    color: #fff;
+    font-weight: bold;
+    font-size: em(21);
+    padding-right: 5%;
+    padding-bottom: 1.8%;
+}
+
+.ritual-description__learn-more {
+    letter-spacing: 0.03em;
+    color: #fff;
+    font-size: em(22);
+    text-transform: uppercase;
+    a {color: #1398ce;}
+}
+
+.ritual-description__learn-more a::after {
+    border-style: solid;
+	border-width: 0.1em 0.1em 0 0;
+	content: '';
+	display: inline-block;
+    height: .72em;
+    width: .72em;
+    left: 0;
+	transform: rotate(45deg);
+	position: relative;
+	top: 0.3em;
+	vertical-align: top;
+    color: #fff;
+}
+
+.terms-and-conditions {
+    color: #fff;
+    padding: 3% 0 8% 0;
+    font-size: em(18);
+    a {
+        color: #fff;
+        padding-left: 4%;
+    }
+}
+
+.terms-and-conditions a::before {
+    border-style: solid;
+	border-width: 0.1em 0.1em 0 0;
+	content: '';
+	display: inline-block;
+    height: .9em;
+    width: .9em;
+    left: -1.3em;
+	transform: rotate(135deg);
+	position: relative;
+	top: 0;
+	vertical-align: top;
+    color: #fff;
+}
+
+// ritual-stat
+.ritual-stat {
+    display: flex;
+    background-color: #0f9ace;
+    color: #fff;
+    padding-left: 2%;
+}
+
+.ritual-stat__text {
+    display: flex;
+    margin-right: auto;
+    p {
+        padding: 2.5% 5.5% 2.5% 0;
+        letter-spacing: -0.05em;
+        font-size: em(35);
+    }
+}
+
+// ritual-grid
+.ritual-grid {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2.5% 0.5% 6% 5%;
+}
+
+.ritual-grid-item {
+    margin-bottom: 3%;
+    margin-right: 3%;
+    width: calc(30% - 0px);
+    img {max-width: 100%;}
+    &:nth-child(3n) {margin-right: 0;}
+    &:nth-child(10), &:nth-child(11), &:nth-child(12) {margin-bottom: 0;}
 }
