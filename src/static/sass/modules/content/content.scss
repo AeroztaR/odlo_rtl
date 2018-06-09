@@ -1,4 +1,7 @@
-.content {background-color: #242424;}
+.content {
+    background-color: #242424;
+    padding-bottom: 3%;
+}
 
 // pic with description
 .content-mainpic__img {
@@ -244,42 +247,6 @@
     }
 }
 
-// .ritual-stat-numbers-list__item {
-//     display: flex;
-//     border-left: 1px solid #fff;
-//     line-height: 0.9;
-//     text-align: center;
-//     font-weight: bold;
-//     span {
-//         display: block;
-//         font-weight: lighter;
-//         font-size: em(12);
-//     }
-    
-//     &:nth-child(1) {
-//         padding: 0 10% 0 10%;
-//     }
-//     &:nth-child(2) {
-//         padding: 0 8% 0 8%;
-//     }
-//     &:nth-child(3) {
-//         padding: 0 0 0 10%;
-//     }
-//     &:last-child {
-//         padding: 0 0 0 10%;
-//         border: none;
-//         >a {
-//             display: block;
-//             height: 35px;
-//             width: 35px;
-//             background: url("../img/inst-icon-bg.png") no-repeat;
-//         }
-//     }
-// }
-
-
-
-
 // ritual-grid
 .ritual-grid {
     display: flex;
@@ -294,4 +261,85 @@
     img {max-width: 100%;}
     &:nth-child(3n) {margin-right: 0;}
     &:nth-child(10), &:nth-child(11), &:nth-child(12) {margin-bottom: 0;}
+}
+
+// show-ritual
+.show-ritual {
+    margin: 0 4.4% 2% 4.9%;
+    padding: 0 5% 1.5% 5%;
+    background-color: #0f9ace;
+}
+
+.show-ritual__title {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    @extend .content-slider-topic__title;
+    padding-bottom: 2.5%;
+    font-size: em(19);
+    color: #252224;
+    span {
+        color: #fff;
+    }
+}
+
+.show-ritual-instagram__link {
+    display: inline-flex;
+    font-size: em(13);
+    color: #fff;
+    font-weight: bold;
+    text-transform: none;
+    span {
+        white-space: nowrap; 
+        padding-bottom: 0.8%;
+        align-self: flex-end;
+    }
+    img {padding-left: 3%;}
+}
+
+.show-ritual__text {
+    color: #fff;
+    font-weight: bold;
+    font-size: em(23);
+    padding-right: 5%;
+    padding-bottom: 0.8%;
+}
+
+.show-ritual__span {
+    font-size: em(22);
+    color: #000; 
+    font-weight: bold;
+}
+
+// learn-more-about
+.learn-more-about {
+    margin: 0 4.4% 0 4.9%;
+    padding: 1.5% 5% 1.5% 5%;
+    background-color: #58595b;
+    font-size: em(22);
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    a {
+        color: #0f9ace;
+        padding-left: 1%;
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.learn-more-about a::after {
+    border-style: solid;
+    border-width: 0.1em 0.1em 0 0;
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    left: 14em;
+    transform: rotate(45deg);
+    position: relative;
+    top: 0.1em;
+    vertical-align: top;
+    color: #109bcf;
 }
