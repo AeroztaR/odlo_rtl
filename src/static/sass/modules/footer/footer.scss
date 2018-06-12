@@ -17,19 +17,21 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    a {
-        display: inline-flex;
-        color: #fff;
-        font-size: em(10);
-        text-transform: uppercase;
-        background: url("../img/footer-sq-ar.png") no-repeat;
-        width: 29px;
-        height: 28px;
-    }
-    span {
-        padding-left: 100%;
-        align-self: center;
-    }
+}
+
+.footer-links__item-link:before {
+    display: inline-flex;
+    content: '';
+    background: url("../img/footer-sq-ar.png") no-repeat;
+    width: 29px;
+    height: 28px;
+    vertical-align: middle;
+}
+
+.footer-links__item-link {
+    color: #fff;
+    font-size: em(10);
+    text-transform: uppercase;
 }
 
 .footer-social-links {
@@ -56,4 +58,3 @@
 .ytb {background: url("../img/ytb.png") no-repeat;}
 .tw {background: url("../img/tw.png") no-repeat;}
 
-  

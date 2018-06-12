@@ -2,3 +2,5 @@
 
 const doc = document;
 
+//slider
+

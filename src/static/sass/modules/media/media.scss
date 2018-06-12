@@ -1,12 +1,378 @@
-$phone: "(min-width: 360px) and (max-width: 640px)";
-$tablet: "(min-width: 640px) and (max-width: 1024px)";
+// $breakpoints: (
+//     "phone":        360px,
+//     "phone-wide":   480px,
+//     "phablet":      560px,
+//     "tablet-small": 640px,
+//     "tablet":       768px,
+//     "tablet-wide":  1024px,
+//     "desktop":      1248px,
+//     "desktop-wide": 1440px
+// );
 
-// $tablet
-@media #{$tablet} {
-
-}
+$phone: "(min-width: 220px) and (max-width: 480px)";
+$phone-wide: "(min-width: 480px) and (max-width: 640px)";
+$tablet-small: "(min-width: 640px) and (max-width: 768px)";
+$tablet-wide: "(min-width: 768px) and (max-width: 1024px)";
 
 // $phone
 @media #{$phone} {
+    // header
+    .header {
+        .header-logo {
+            margin-right: 2%;
+        }
+        .header-menu {
+            .header-menu__item:nth-child(1) {
+                padding: 2% 0%;
+            }
+            .header-menu__item:nth-child(2) {
+                padding: 2% 0%;
+            }
+        }
+        .header-nav {
+            .header-menu {
+                width: 60vw;
+                .header-menu__item {
+                    margin-top: 8.6%;
+                    font-size: em(12);
+                }
+            }
+        }
+    }
+    // content
+    .content {
+        // content-mainpic
+        .content-mainpic {
+            .content-mainpic__img {
+                display: none;
+            }
+        }
+        // content-description
+        .content-description {
+            .content-description__title {
+                font-size: em(23);
+                padding: 2% 5%;
+            }
+            .content-description__text {
+                font-size: em(19);
+                padding: 0 25% 3% 25%;
+            }
+        }
+        // content-slider
+        .content-slider {
+            .content-slider-inner::before {
+                top: 4.5em;
+                height: 1em;
+                width: 1em;
+                left: 0.8em;
+            }
+            .content-slider-inner::after {
+                top: 4.5em;
+                height: 1em;
+                width: 1em;
+                left: -0.8em;
+            }
+            .content-slider-inner {
+                .content-slider-inner__item {
+                    p {
+                        font-size: em(12);
+                    }
+                    width: 40%;
+                    padding: 0;
+                    &:nth-child(3) {
+                        display: none;
+                    }
+                } 
+            } 
+        }
+        // ritual-description
+        .ritual-description {
+            .ritual-description__title {
+                font-size: em(15);
+            }
+            .ritual-description__text, .ritual-description__learn-more {
+                font-size: em(18);
+            }
+            .terms-and-conditions {
+                padding: 3% 0 8% 2%;
+                font-size: em(16);
+            }
+        }
+        // ritual-stat
+        .ritual-stat {
+            .ritual-stat__text {
+                p {
+                    font-size: em(24);
+                    span {
+                        padding-left: 3%;
+                    }
+                }
+            }
+            .ritual-stat-numbers {
+                flex-grow: 0;
+                padding-left: 0;
+                margin-left: 0;
+                .ritual-stat-numbers__item {
+                    &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        // ritual-grid
+        .ritual-grid {
+            .ritual-grid-item {
+                margin-bottom: 3%;
+                margin-right: 3%;
+                width: calc(46.5% - 0px);
+                &:nth-child(2n) {margin-right: 0;}
+            }
+        }
+        // show-ritual
+        .show-ritual {
+            margin: 0 0 2% 0;
+            .show-ritual__title {
+                font-size: em(14);
+            }
+            .show-ritual-instagram__link {
+                span {
+                    padding-bottom: 7.8%;
+                }
+            }
+            .show-ritual__text {
+                font-size: em(17);
+            }
+            .show-ritual__span {
+                font-size: em(16);
+            }
+        }
+        // learn-more-about
+        .learn-more-about {
+            margin: 0;
+            padding: 1.5% 5% 1.5% 5%;
+            background-color: #242424;
+            font-size: em(16);
+            a::after {
+                left: 1em;
+                top: 0.2em;
+                height: 0.8em;
+                width: 0.8em;
+            }
+        }
+    }
+    //footer
+    .footer {
+        .footer-links {
+            .footer-links__item-link:before {
+                background: url("../img/mobiler-footer-sq-ar.png") no-repeat;
+                width: 41px;
+                height: 38px;
+            }
+            .footer-links__item-link {
+                font-size: em(7.1);
+            }
+        }
+        .footer-social-links {
+            display: none;
+        }
+    }
+}
 
+@media #{$phone-wide} {
+    // header
+    .header {
+        .header-logo {
+            margin-right: 2%;
+        }
+        .header-menu {
+            .header-menu__item:nth-child(1) {
+                padding: 2% 0%;
+            }
+            .header-menu__item:nth-child(2) {
+                padding: 2% 0%;
+            }
+        }
+        .header-nav {
+            .header-menu {
+                width: 66vw;
+                .header-menu__item {
+                    margin-top: 4.4%;
+                    font-size: em(17);
+                }
+            }
+        }
+    }
+    // content
+    .content {
+        // content-mainpic
+        .content-mainpic {
+                .content-mainpic__img {
+                    display: none;
+                }
+        }
+         // contetnt-description
+        .content-description {
+            .content-description__title {
+                font-size: em(25);
+                padding: 2% 8%;
+            }
+            .content-description__text {
+                color: #fff;
+                font-size: em(21);
+                padding: 0 30% 3% 30%;
+            }
+        }
+        //content-slider
+        .content-slider {
+            .content-slider-inner::before {
+                top: 6.35em;
+                height: 1.1em;
+                width: 1.1em;
+            }
+            .content-slider-inner::after {
+                top: 6.35em;
+                height: 1.1em;
+                width: 1.1em;
+            }
+            .content-slider-inner {
+                .content-slider-inner__item {
+                    width: 46%;
+                    padding: 0 1%;
+                    &:nth-child(3) {
+                        display: none;
+                    }
+                } 
+            } 
+        }
+        // ritual-stat
+        .ritual-stat {
+            justify-content: flex-start;
+            .ritual-stat__text {
+                p {
+                    font-size: em(29);
+                }
+            }
+            .ritual-stat-numbers {
+                flex-grow: 0;
+                padding-left: 5%;
+                margin-left: 0;
+                .ritual-stat-numbers__item {
+                    &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+                        display: none;
+                    }
+                    &:nth-child(4) {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        // ritual-grid
+        .ritual-grid {
+            .ritual-grid-item {
+                margin-bottom: 3%;
+                margin-right: 3%;
+                width: calc(46.5% - 0px);
+                &:nth-child(2n) {margin-right: 0;}
+            }
+        }
+        //show-ritual
+        .show-ritual {
+            margin: 0 0 2% 0;
+            padding: 0 5% 1.5% 5%;
+            background-color: #0f9ace;
+            .show-ritual__title {
+                font-size: em(16);
+            }
+            .show-ritual-instagram {
+                .show-ritual-instagram__link  {
+                    display: inline-flex;
+                    font-size: em(13);
+                    color: #fff;
+                    font-weight: bold;
+                    text-transform: none;
+                    span {
+                        padding-bottom: 2.8%;
+                    }
+                }
+            }
+            .show-ritual__text {
+                font-size: em(20);
+            }
+            .show-ritual__span {
+                font-size: em(19);
+            }
+        }
+        // learn-more-about
+        .learn-more-about {
+            margin: 0;
+            background-color: #242424;
+            font-size: em(17);
+            a::after {
+                left: 2.5em;
+                height: 0.8em;
+                width: 0.8em;
+                top: 0.3em;
+            }
+        }
+    }
+    // footer
+    .footer {
+        .footer-links {
+            .footer-links__item-link:before {
+                background: url("../img/mobiler-footer-sq-ar.png") no-repeat;
+                width: 41px;
+                height: 38px;
+            }
+            .footer-links__item-link {
+                font-size: em(12);
+            }
+        }
+        .footer-social-links {
+            display: none;
+        }
+    }
+}
+
+@media #{$tablet-small} {
+    .content {
+        .ritual-stat-numbers {
+            margin: 0;
+        }
+    }
+}
+
+@media #{$tablet-wide} {
+    .content {
+        .ritual-stat-numbers {
+            margin: 0;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 641px) and (max-width: 3000px) {
+    .wrapper {
+        .content {
+            padding-bottom: 3%;
+        }
+    }
+    .content-mainpic {
+        .content-mainpic__img-mobile {
+            display: none;
+        }
+    }
+    .content {
+        .mobile-footer {
+            display: none;
+        }
+    }
 }
