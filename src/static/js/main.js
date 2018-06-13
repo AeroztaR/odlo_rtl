@@ -55,9 +55,52 @@ function imgClick(e){
 startSlide();
 
 // swipe
+let touchstartX = 0,
+    touchstartY = 0,
+    touchendX = 0,
+    touchendY = 0,
+    gestureZone = doc.querySelector('.content-slider');
 
-
-
+    gestureZone.addEventListener('touchstart', function(event) {
+        touchstartX = event.changedTouches[0].screenX;
+        touchstartY = event.changedTouches[0].screenY;
+    }, false);
+    
+    gestureZone.addEventListener('touchend', function(event) {
+        touchendX = event.changedTouches[0].screenX;
+        touchendY = event.changedTouches[0].screenY;
+        handleGesture();
+    }, false); 
+    
+    function handleGesture() {
+        if (touchendX < touchstartX) {
+            console.log('Swiped left');
+            if(current === 0){
+                current = sliderImages.length;
+            }
+            slideLeft();
+        }
+        
+        if (touchendX > touchstartX) {
+            console.log('Swiped right');
+            if(current === sliderImages.length - 1){
+                current = -1;
+            }
+            slideRight();
+        }
+        
+        if (touchendY < touchstartY) {
+            console.log('Swiped up');
+        }
+        
+        if (touchendY > touchstartY) {
+           console.log('Swiped down');
+        }
+        
+        if (touchendY === touchstartY) {
+           console.log('Tap');
+        }
+    }
 
 // terms-and-conditions popup
 let termsLink = doc.querySelector('.terms-and-conditions__link'),
