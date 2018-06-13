@@ -30,6 +30,8 @@
 }
 
 // video slider
+.content-slider {position: relative;}
+
 .content-slider-topic, .content-slider__img {padding: 0 4.4% 0 4.9%;}
 
 .content-slider-topic__title {
@@ -47,49 +49,50 @@
 }
 
 .content-slider__img {
-    // display: none;
     width: 100%;
 }
 
 .content-slider-inner {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    padding-bottom: 2.5%;
+    justify-content: space-between;
+    padding: 0 5% 2.5% 5%;
 }
 
-.content-slider-inner::before {
+.arrowLeft {
     border-style: solid;
 	border-width: 0.15em 0.15em 0 0;
 	content: '';
 	display: inline-block;
     height: 1.4em;
     width: 1.4em;
-	left: 1em;
+	left: 2%;
 	transform: rotate(-135deg);
-	position: relative;
-	top: 7.35em;
+	position: absolute;
+	top: 85.5%;;
 	vertical-align: top;
     color: #109bcf;
+    cursor: pointer;
 }
 
-.content-slider-inner::after {
+.arrowRight {
     border-style: solid;
 	border-width: 0.15em 0.15em 0 0;
 	content: '';
 	display: inline-block;
     height: 1.4em;
     width: 1.4em;
-    left: -1em;
+    right: 2%;
 	transform: rotate(45deg);
-	position: relative;
-	top: 7.35em;
+	position: absolute;
+	top: 85.5%;
 	vertical-align: top;
     color: #109bcf;
+    cursor: pointer;
 }
 
 .content-slider-inner__item {
-    width: 29%;
+    width: 32%;
     cursor: pointer;
     p {
         @extend .content-slider-topic__text;
@@ -201,7 +204,7 @@
 }
 
 .terms-and-conditions-text {
-    display: none;
+    opacity: 0;
     height: 132vh;
     position: absolute;
     overflow: auto;
@@ -231,8 +234,11 @@
     }
 }
 
-
-
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 3s ease-in;
+}
 
 // ritual-stat
 .ritual-stat {
@@ -399,6 +405,7 @@
     top: 0;
     vertical-align: top;
     color: #109bcf;
+    cursor: pointer;
 }
 
 // mobile-footer
