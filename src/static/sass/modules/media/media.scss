@@ -159,6 +159,13 @@ $tablet-wide: "(min-width: 768px) and (max-width: 1024px)";
                 width: 0.8em;
             }
         }
+        // terms-and-conditions-text
+        .terms-and-conditions {
+            width: 100%;
+        }
+        .terms-and-conditions-text {
+            width: 91%;
+        }
     }
     //footer
     .footer {
@@ -314,6 +321,13 @@ $tablet-wide: "(min-width: 768px) and (max-width: 1024px)";
                 top: 0.3em;
             }
         }
+        // terms-and-conditions-text
+        .terms-and-conditions {
+            width: 100%;
+        }
+        .terms-and-conditions-text {
+            width: 91%;
+        }
     }
     // footer
     .footer {
@@ -348,16 +362,6 @@ $tablet-wide: "(min-width: 768px) and (max-width: 1024px)";
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 641px) and (max-width: 3000px) {
     .wrapper {
