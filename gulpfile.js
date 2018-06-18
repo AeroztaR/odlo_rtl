@@ -20,12 +20,12 @@ $.path.tasks.forEach((taskpath) => {
 
 $.gulp.task('default', $.gulp.series(
     $.gulp.parallel('clean'),
-    $.gulp.parallel('pug', 'sass', 'script:lib', 'script', 'svg', 'img:dev', 'fonts'),
+    $.gulp.parallel('pug', 'sass', 'script', 'svg', 'img:dev', 'fonts'),
     $.gulp.parallel('watch', 'server')
 ));
 
 $.gulp.task('build', $.gulp.series(
     $.gulp.parallel('clean'),
-    $.gulp.parallel('pug', 'sass', 'script:lib', 'script', 'svg', 'img:build', 'fonts'),
+    $.gulp.parallel('pug', 'sass', 'script', 'svg', 'img:build', 'fonts'),
     $.gulp.parallel('watch', 'server')
 ));

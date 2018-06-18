@@ -1,0 +1,41 @@
+// mobile-footer
+.mobile-footer {
+    padding: 1.5% 5% 1.5% 5%;
+    background-color: #58595b;
+}
+
+.mobile-social {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.mobile-social-links__item {
+    display: inline-flex;
+    align-self: center;
+}
+
+.tumb-mb, .fb-mb, .tw-mb, .inst-mb, .ytb-mb {
+    display: block;
+}
+
+.tumb-mb {
+    width: 22px;
+    height: 35px;
+}
+
+.inst-mb, .tw-mb, .fb-mb {
+    width: 26px;
+    height: 29px;
+}
+
+.ytb-mb {
+    width: 35px;
+    height: 29px;
+}
+
+.tumb-mb {background: url("../img/tumb-mb.png") no-repeat;}
+.inst-mb {background: url("../img/inst-mb.png") no-repeat;}
+.fb-mb {background: url("../img/fb-mb.png") no-repeat;}
+.ytb-mb {background: url("../img/ytb-mb.png") no-repeat;}
+.tw-mb {background: url("../img/tw-mb.png") no-repeat;}
