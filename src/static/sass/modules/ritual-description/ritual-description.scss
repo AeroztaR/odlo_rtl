@@ -64,6 +64,7 @@
     padding: 1% 0;
     font-size: em(18);
     margin: 1.5% 0 5% 0;
+    white-space: nowrap;
     a {
         color: #fff;
         padding-left: 4%;
@@ -89,9 +90,9 @@
 }
 
 .closeLink {
-    background: url('../img/closeLink.png') no-repeat;
-    width: 28px;
+    width: 28px; 
     height: 26px;
+    background: url('../img/css_sprites.png') -148px -146px;
     display: inline-flex;
     vertical-align: middle;
     position: sticky;
@@ -131,5 +132,5 @@
 .visible {
     visibility: visible;
     opacity: 1;
-    transition: opacity 3s ease-in;
+    transition: opacity 1s ease-in;
 }

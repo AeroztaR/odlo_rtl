@@ -59,20 +59,28 @@ $tablet-wide: "(min-width: 768px) and (max-width: 1024px)";
             }
         }
         // content-slider
-        .content-slider {
-            .content-slider-inner {
-                .content-slider-inner__item {
-                    p {
-                        font-size: em(12);
-                    }
-                    width: 48%;
-                    padding: 0;
-                    &:nth-child(3) {
-                        display: none;
-                    }
-                } 
+        .content-slider-inner {
+            .content-slider-inner__item {
+                p {
+                     font-size: em(12);
+                }
+                width: 48%;
+                padding: 0;
+                &:nth-child(3) {
+                    display: none;
+                }
             } 
         }
+
+        .slick-prev.slick-arrow::before, .slick-next.slick-arrow::before {
+            height: .9em;
+            width: .9em;
+        }
+
+        .slick-next.slick-arrow, .slick-prev.slick-arrow {
+            top: 130%;
+        }
+
         // ritual-description
         .ritual-description {
             .ritual-description__title {
@@ -159,7 +167,7 @@ $tablet-wide: "(min-width: 768px) and (max-width: 1024px)";
     .footer {
         .footer-links {
             .footer-links__item-link:before {
-                background: url("../img/mobiler-footer-sq-ar.png") no-repeat;
+                background: url('../img/css_sprites.png') -91px -10px;
                 width: 41px;
                 height: 38px;
             }
@@ -218,16 +226,23 @@ $tablet-wide: "(min-width: 768px) and (max-width: 1024px)";
             }
         }
         //content-slider
-        .content-slider {
-            .content-slider-inner {
-                .content-slider-inner__item {
-                    width: 49%;
-                    padding: 0 1%;
-                    &:nth-child(3) {
-                        display: none;
-                    }
-                } 
+        .content-slider-inner { 
+            .content-slider-inner__item {
+                width: 49%;
+                padding: 0 1%;
+                &:nth-child(3) {
+                    display: none;
+                }
             } 
+        }
+
+        .slick-prev.slick-arrow::before, .slick-next.slick-arrow::before {
+            height: .9em;
+            width: .9em;
+        }
+
+        .slick-next.slick-arrow, .slick-prev.slick-arrow {
+            top: 140%;
         }
         // ritual-stat
         .ritual-stat {
@@ -311,7 +326,7 @@ $tablet-wide: "(min-width: 768px) and (max-width: 1024px)";
     .footer {
         .footer-links {
             .footer-links__item-link:before {
-                background: url("../img/mobiler-footer-sq-ar.png") no-repeat;
+                background: url('../img/css_sprites.png') -91px -10px;
                 width: 41px;
                 height: 38px;
             }

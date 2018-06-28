@@ -8,15 +8,13 @@
 }
 
 .header-logo {
-    background: url("../img/main-logo.jpg") no-repeat;
-    width: 61px;
+    width: 61px; 
     height: 61px;
+    background: url('../img/css_sprites.png') -10px -10px;
     margin-top: 3.3%;
 }
 
-.header-nav {
-    flex-grow: 1;
-}
+.header-nav {flex-grow: 1;}
 
 .header-menu {
     display: flex;

@@ -22,7 +22,7 @@
 .footer-links__item-link:before {
     display: inline-flex;
     content: '';
-    background: url("../img/footer-sq-ar.png") no-repeat;
+    background: url("../img/css_sprites.png") -152px -10px;
     width: 29px;
     height: 28px;
     vertical-align: middle;
@@ -47,14 +47,14 @@
 }
 
 .tumb, .fb, .tw, .inst, .ytb {
+    background: url("../img/css_sprites.png");
     display: block;
     width: 23px;
     height: 23px;
 }
 
-.tumb {background: url("../img/tumb.png") no-repeat;}
-.inst {background: url("../img/inst.png") no-repeat;}
-.fb {background: url("../img/fb.png") no-repeat;}
-.ytb {background: url("../img/ytb.png") no-repeat;}
-.tw {background: url("../img/tw.png") no-repeat;}
-
+.tumb {background-position: -53px -195px;}
+.inst {background-position: -201px -55px;}
+.fb {background-position: -201px -141px;}
+.ytb {background-position: -10px -195px;}
+.tw {background-position: -201px -98px;}
